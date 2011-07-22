@@ -63,8 +63,11 @@
     it('should convert 21 to XXI', function() {
       return expect(toRoman(21)).toEqual("XXI");
     });
-    return it('should convert 25 to XXV', function() {
-      return expect(toRoman(21)).toEqual("XXI");
+    it('should convert 25 to XXV', function() {
+      return expect(toRoman(25)).toEqual("XXV");
+    });
+    return it('should convert 29 to XXIX', function() {
+      return expect(toRoman(29)).toEqual("XXIX");
     });
   });
 }).call(this);
