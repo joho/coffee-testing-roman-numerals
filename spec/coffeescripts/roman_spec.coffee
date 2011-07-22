@@ -49,3 +49,18 @@ describe 'toRoman()', ->
 
   it 'should convert 17 to XVII', ->
     expect(toRoman(17)).toEqual("XVII")
+
+  it 'should convert 18 to XVIII', ->
+    expect(toRoman(18)).toEqual("XVIII")
+
+  it 'should convert 19 to XIX', ->
+    expect(toRoman(19)).toEqual("XIX")
+
+  it 'should convert 20 to XX', ->
+    expect(toRoman(20)).toEqual("XX")
+
+  it 'should convert 21 to XXI', ->
+    expect(toRoman(21)).toEqual("XXI")
+
+  it 'should convert 25 to XXV', ->
+    expect(toRoman(21)).toEqual("XXI")
