@@ -7,10 +7,8 @@ window.toRoman = (number) ->
     ""
   else if number < 4
     xTimesI(number)
-  else if number < 5
-    "IV"
-  else if number >= 5 && number <= 8
-    "V" + toRoman(number - 5)
+  else if number >= 4 && number <= 8
+    toRoman(5 - number) + "V" + toRoman(number - 5)
   else
     "IX"
 

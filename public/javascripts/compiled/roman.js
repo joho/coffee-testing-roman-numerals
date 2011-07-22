@@ -4,10 +4,8 @@
       return "";
     } else if (number < 4) {
       return xTimesI(number);
-    } else if (number < 5) {
-      return "IV";
-    } else if (number >= 5 && number <= 8) {
-      return "V" + toRoman(number - 5);
+    } else if (number >= 4 && number <= 8) {
+      return toRoman(5 - number) + "V" + toRoman(number - 5);
     } else {
       return "IX";
     }
