@@ -24,8 +24,20 @@
     it('should convert 8 to VIII', function() {
       return expect(toRoman(8)).toEqual("VIII");
     });
-    return it('should convert 9 to IX', function() {
+    it('should convert 9 to IX', function() {
       return expect(toRoman(9)).toEqual("IX");
+    });
+    it('should convert 10 to X', function() {
+      return expect(toRoman(10)).toEqual("X");
+    });
+    it('should convert 11 to XI', function() {
+      return expect(toRoman(11)).toEqual("XI");
+    });
+    it('should convert 12 to XII', function() {
+      return expect(toRoman(12)).toEqual("XII");
+    });
+    return it('should convert 13 to XIII', function() {
+      return expect(toRoman(13)).toEqual("XIII");
     });
   });
 }).call(this);

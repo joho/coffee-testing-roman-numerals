@@ -26,4 +26,14 @@ describe 'toRoman()', ->
   it 'should convert 9 to IX', ->
     expect(toRoman(9)).toEqual("IX")
 
+  it 'should convert 10 to X', ->
+    expect(toRoman(10)).toEqual("X")
 
+  it 'should convert 11 to XI', ->
+    expect(toRoman(11)).toEqual("XI")
+
+  it 'should convert 12 to XII', ->
+    expect(toRoman(12)).toEqual("XII")
+
+  it 'should convert 13 to XIII', ->
+    expect(toRoman(13)).toEqual("XIII")

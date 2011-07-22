@@ -6,8 +6,8 @@
       return xTimesI(number);
     } else if (number >= 4 && number <= 8) {
       return toRoman(5 - number) + "V" + toRoman(number - 5);
-    } else {
-      return "IX";
+    } else if (number >= 9 && number <= 13) {
+      return toRoman(10 - number) + "X" + toRoman(number - 10);
     }
   };
   window.xTimesI = function(number) {
