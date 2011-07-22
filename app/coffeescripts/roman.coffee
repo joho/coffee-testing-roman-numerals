@@ -17,10 +17,15 @@ window.toRoman = (number) ->
     wrapNumeral("L", 50, number)
   else if number >= 99 && number <= 498
     wrapNumeral("C", 100, number)
-  else if number >= 499 && number <= 998
-    wrapNumeral("D", 500, number)
-  else if number >= 999
-    wrapNumeral("M", 1000, number)
+  else
+    numeralsAndValues = [
+      ["D", 500],
+      ["M", 1000]]
+    numeral = ""
+    for numeralAndValue in numeralsAndValues
+      if number >= numeralAndValue[1]
+        numeral = wrapNumeral(numeralAndValue[0], numeralAndValue[1], number)
+    numeral
 
 window.xTimesI = (number) ->
   numeral = ""

@@ -1,5 +1,6 @@
 (function() {
   window.toRoman = function(number) {
+    var numeral, numeralAndValue, numeralsAndValues, _i, _len;
     if (number <= 0) {
       return "";
     } else if (number >= 0 && number <= 3) {
@@ -12,10 +13,16 @@
       return wrapNumeral("L", 50, number);
     } else if (number >= 99 && number <= 498) {
       return wrapNumeral("C", 100, number);
-    } else if (number >= 499 && number <= 998) {
-      return wrapNumeral("D", 500, number);
-    } else if (number >= 999) {
-      return wrapNumeral("M", 1000, number);
+    } else {
+      numeralsAndValues = [["D", 500], ["M", 1000]];
+      numeral = "";
+      for (_i = 0, _len = numeralsAndValues.length; _i < _len; _i++) {
+        numeralAndValue = numeralsAndValues[_i];
+        if (number >= numeralAndValue[1]) {
+          numeral = wrapNumeral(numeralAndValue[0], numeralAndValue[1], number);
+        }
+      }
+      return numeral;
     }
   };
   window.xTimesI = function(number) {
