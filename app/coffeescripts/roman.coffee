@@ -17,6 +17,7 @@ window.toRoman = (number) ->
     wrapNumeral("L", 50, number)
   else
     numeralsAndValues = [
+      ["L", 50],
       ["C", 100],
       ["D", 500],
       ["M", 1000]]

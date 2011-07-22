@@ -12,7 +12,7 @@
     } else if (number >= 49 && number <= 98) {
       return wrapNumeral("L", 50, number);
     } else {
-      numeralsAndValues = [["C", 100], ["D", 500], ["M", 1000]];
+      numeralsAndValues = [["L", 50], ["C", 100], ["D", 500], ["M", 1000]];
       numeral = "";
       for (_i = 0, _len = numeralsAndValues.length; _i < _len; _i++) {
         numeralAndValue = numeralsAndValues[_i];
