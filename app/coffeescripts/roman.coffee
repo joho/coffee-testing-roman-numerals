@@ -2,4 +2,16 @@
 # Do roman numerals
 #
 window.toRoman = (number) ->
-  "I"
+  numeral = ""
+
+  if number < 4
+    for i in [1..number]
+      numeral += "I"
+  else if number < 5
+    numeral = "IV"
+  else if number < 6
+    numeral = "V"
+  else
+    numeral = "VI"
+
+  numeral
