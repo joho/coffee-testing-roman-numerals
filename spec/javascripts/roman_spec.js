@@ -15,8 +15,11 @@
     it('should convert 5 to V', function() {
       return expect(toRoman(5)).toEqual("V");
     });
-    return it('should convert 6 to VI', function() {
-      return expect(toRoman(5)).toEqual("V");
+    it('should convert 6 to VI', function() {
+      return expect(toRoman(6)).toEqual("VI");
+    });
+    return it('should convert 7 to VII', function() {
+      return expect(toRoman(7)).toEqual("VII");
     });
   });
 }).call(this);

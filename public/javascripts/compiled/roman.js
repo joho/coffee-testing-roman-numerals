@@ -10,8 +10,10 @@
       numeral = "IV";
     } else if (number < 6) {
       numeral = "V";
-    } else {
+    } else if (number < 7) {
       numeral = "VI";
+    } else {
+      numeral = "VII";
     }
     return numeral;
   };
