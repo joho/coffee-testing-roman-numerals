@@ -39,8 +39,11 @@
     it('should convert 13 to XIII', function() {
       return expect(toRoman(13)).toEqual("XIII");
     });
-    return it('should convert 14 to XIV', function() {
+    it('should convert 14 to XIV', function() {
       return expect(toRoman(14)).toEqual("XIV");
+    });
+    return it('should convert 15 to XV', function() {
+      return expect(toRoman(15)).toEqual("XV");
     });
   });
 }).call(this);
