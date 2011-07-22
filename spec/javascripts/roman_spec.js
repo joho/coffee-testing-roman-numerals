@@ -78,8 +78,17 @@
     it('should convert 50 to L', function() {
       return expect(toRoman(50)).toEqual("L");
     });
-    return it('should convert 58 to LVIII', function() {
+    it('should convert 58 to LVIII', function() {
       return expect(toRoman(58)).toEqual("LVIII");
+    });
+    it('should convert 100 to C', function() {
+      return expect(toRoman(100)).toEqual("C");
+    });
+    it('should convert 500 to D', function() {
+      return expect(toRoman(500)).toEqual("D");
+    });
+    return it('should convert 1000 to M', function() {
+      return expect(toRoman(1000)).toEqual("M");
     });
   });
 }).call(this);

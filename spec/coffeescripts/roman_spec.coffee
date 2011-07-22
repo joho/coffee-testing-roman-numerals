@@ -79,3 +79,12 @@ describe 'toRoman()', ->
   
   it 'should convert 58 to LVIII', ->
     expect(toRoman(58)).toEqual("LVIII")
+  
+  it 'should convert 100 to C', ->
+    expect(toRoman(100)).toEqual("C")
+  
+  it 'should convert 500 to D', ->
+    expect(toRoman(500)).toEqual("D")
+  
+  it 'should convert 1000 to M', ->
+    expect(toRoman(1000)).toEqual("M")
