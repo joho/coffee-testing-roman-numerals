@@ -66,8 +66,14 @@
     it('should convert 25 to XXV', function() {
       return expect(toRoman(25)).toEqual("XXV");
     });
-    return it('should convert 29 to XXIX', function() {
+    it('should convert 29 to XXIX', function() {
       return expect(toRoman(29)).toEqual("XXIX");
+    });
+    it('should convert 34 to XXIV', function() {
+      return expect(toRoman(34)).toEqual("XXXIV");
+    });
+    return it('should convert 49 to IL', function() {
+      return expect(toRoman(49)).toEqual("IL");
     });
   });
 }).call(this);

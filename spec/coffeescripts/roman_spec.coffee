@@ -67,3 +67,9 @@ describe 'toRoman()', ->
 
   it 'should convert 29 to XXIX', ->
     expect(toRoman(29)).toEqual("XXIX")
+
+  it 'should convert 34 to XXIV', ->
+    expect(toRoman(34)).toEqual("XXXIV")
+
+  it 'should convert 49 to IL', ->
+    expect(toRoman(49)).toEqual("IL")
