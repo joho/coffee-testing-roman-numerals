@@ -4,6 +4,8 @@
 window.toRoman = (number) ->
   if number <= 0
     # do nothing (coffeescript ranges are dumb)
+    # and will go negative instead of not doing anything
+    # so guard against negative roman numerals
     ""
   else if number < 4
     xTimesI(number)
