@@ -11,14 +11,12 @@
       return wrapNumeral("X", 10, number);
     } else if (number >= 49 && number <= 98) {
       return wrapNumeral("L", 50, number);
-    } else if (number >= 99 && number <= 498) {
-      return wrapNumeral("C", 100, number);
     } else {
-      numeralsAndValues = [["D", 500], ["M", 1000]];
+      numeralsAndValues = [["C", 100], ["D", 500], ["M", 1000]];
       numeral = "";
       for (_i = 0, _len = numeralsAndValues.length; _i < _len; _i++) {
         numeralAndValue = numeralsAndValues[_i];
-        if (number >= numeralAndValue[1]) {
+        if (number >= (numeralAndValue[1] - 1)) {
           numeral = wrapNumeral(numeralAndValue[0], numeralAndValue[1], number);
         }
       }

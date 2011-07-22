@@ -15,15 +15,14 @@ window.toRoman = (number) ->
     wrapNumeral("X", 10, number)
   else if number >= 49 and number <= 98
     wrapNumeral("L", 50, number)
-  else if number >= 99 && number <= 498
-    wrapNumeral("C", 100, number)
   else
     numeralsAndValues = [
+      ["C", 100],
       ["D", 500],
       ["M", 1000]]
     numeral = ""
     for numeralAndValue in numeralsAndValues
-      if number >= numeralAndValue[1]
+      if number >= (numeralAndValue[1] - 1)
         numeral = wrapNumeral(numeralAndValue[0], numeralAndValue[1], number)
     numeral
 
