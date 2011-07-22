@@ -2,7 +2,7 @@
   window.toRoman = function(number) {
     if (number <= 0) {
       return "";
-    } else if (number < 4) {
+    } else if (number >= 0 && number <= 3) {
       return xTimesI(number);
     } else if (number >= 4 && number <= 8) {
       return toRoman(5 - number) + "V" + toRoman(number - 5);
@@ -11,7 +11,7 @@
     } else if (number >= 14 && number <= 48) {
       return "X" + toRoman(number - 10);
     } else if (number >= 49) {
-      return "IL";
+      return toRoman(50 - number) + "L";
     }
   };
   window.xTimesI = function(number) {

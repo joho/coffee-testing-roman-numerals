@@ -73,3 +73,6 @@ describe 'toRoman()', ->
 
   it 'should convert 49 to IL', ->
     expect(toRoman(49)).toEqual("IL")
+
+  it 'should convert 50 to L', ->
+    expect(toRoman(50)).toEqual("L")

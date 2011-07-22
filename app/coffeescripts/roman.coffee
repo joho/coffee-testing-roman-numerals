@@ -7,7 +7,7 @@ window.toRoman = (number) ->
     # and will go negative instead of not doing anything
     # so guard against negative roman numerals
     ""
-  else if number < 4
+  else if number >= 0 && number <= 3
     xTimesI(number)
   else if number >= 4 && number <= 8
     toRoman(5 - number) + "V" + toRoman(number - 5)
@@ -16,7 +16,7 @@ window.toRoman = (number) ->
   else if number >= 14 && number <= 48
     "X" + toRoman(number - 10)
   else if number >= 49
-    "IL"
+    toRoman(50 - number) + "L"
 
 window.xTimesI = (number) ->
   numeral = ""

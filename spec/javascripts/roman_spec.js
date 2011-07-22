@@ -72,8 +72,11 @@
     it('should convert 34 to XXIV', function() {
       return expect(toRoman(34)).toEqual("XXXIV");
     });
-    return it('should convert 49 to IL', function() {
+    it('should convert 49 to IL', function() {
       return expect(toRoman(49)).toEqual("IL");
+    });
+    return it('should convert 50 to L', function() {
+      return expect(toRoman(50)).toEqual("L");
     });
   });
 }).call(this);
