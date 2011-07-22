@@ -19,3 +19,6 @@ describe 'toRoman()', ->
   
   it 'should convert 7 to VII', ->
     expect(toRoman(7)).toEqual("VII")
+  
+  it 'should convert 8 to VIII', ->
+    expect(toRoman(8)).toEqual("VIII")

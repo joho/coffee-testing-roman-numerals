@@ -18,8 +18,11 @@
     it('should convert 6 to VI', function() {
       return expect(toRoman(6)).toEqual("VI");
     });
-    return it('should convert 7 to VII', function() {
+    it('should convert 7 to VII', function() {
       return expect(toRoman(7)).toEqual("VII");
+    });
+    return it('should convert 8 to VIII', function() {
+      return expect(toRoman(8)).toEqual("VIII");
     });
   });
 }).call(this);
