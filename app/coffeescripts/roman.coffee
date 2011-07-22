@@ -13,8 +13,6 @@ window.toRoman = (number) ->
     wrapNumeral("V", 5, number)
   else if number >= 9 && number <= 48
     wrapNumeral("X", 10, number)
-  else if number >= 49 and number <= 98
-    wrapNumeral("L", 50, number)
   else
     numeralsAndValues = [
       ["L", 50],

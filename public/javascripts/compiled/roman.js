@@ -9,8 +9,6 @@
       return wrapNumeral("V", 5, number);
     } else if (number >= 9 && number <= 48) {
       return wrapNumeral("X", 10, number);
-    } else if (number >= 49 && number <= 98) {
-      return wrapNumeral("L", 50, number);
     } else {
       numeralsAndValues = [["L", 50], ["C", 100], ["D", 500], ["M", 1000]];
       numeral = "";
