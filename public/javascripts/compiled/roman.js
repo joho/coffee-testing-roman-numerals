@@ -5,19 +5,17 @@
     } else if (number >= 0 && number <= 3) {
       return xTimesI(number);
     } else if (number >= 4 && number <= 8) {
-      return toRoman(5 - number) + "V" + toRoman(number - 5);
-    } else if (number >= 9 && number <= 13) {
-      return toRoman(10 - number) + "X" + toRoman(number - 10);
-    } else if (number >= 14 && number <= 48) {
-      return "X" + toRoman(number - 10);
+      return wrapNumeral("V", 5, number);
+    } else if (number >= 9 && number <= 48) {
+      return wrapNumeral("X", 10, number);
     } else if (number >= 49 && number <= 98) {
-      return toRoman(50 - number) + "L" + toRoman(number - 50);
+      return wrapNumeral("L", 50, number);
     } else if (number >= 99 && number <= 498) {
-      return toRoman(100 - number) + "C" + toRoman(number - 100);
+      return wrapNumeral("C", 100, number);
     } else if (number >= 499 && number <= 998) {
-      return toRoman(500 - number) + "D" + toRoman(number - 500);
+      return wrapNumeral("D", 500, number);
     } else if (number >= 999) {
-      return toRoman(1000 - number) + "M" + toRoman(number - 1000);
+      return wrapNumeral("M", 1000, number);
     }
   };
   window.xTimesI = function(number) {
@@ -27,5 +25,8 @@
       numeral += "I";
     }
     return numeral;
+  };
+  window.wrapNumeral = function(numeral, valueOfNumeral, number) {
+    return toRoman(valueOfNumeral - number) + numeral + toRoman(number - valueOfNumeral);
   };
 }).call(this);
