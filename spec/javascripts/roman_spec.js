@@ -45,8 +45,11 @@
     it('should convert 15 to XV', function() {
       return expect(toRoman(15)).toEqual("XV");
     });
-    return it('should convert 16 to XVI', function() {
-      return expect(toRoman(15)).toEqual("XV");
+    it('should convert 16 to XVI', function() {
+      return expect(toRoman(16)).toEqual("XVI");
+    });
+    return it('should convert 17 to XVII', function() {
+      return expect(toRoman(17)).toEqual("XVII");
     });
   });
 }).call(this);
