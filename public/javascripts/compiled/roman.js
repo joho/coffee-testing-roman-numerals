@@ -11,7 +11,7 @@
     } else if (number >= 14 && number <= 48) {
       return "X" + toRoman(number - 10);
     } else if (number >= 49) {
-      return toRoman(50 - number) + "L";
+      return toRoman(50 - number) + "L" + toRoman(number - 50);
     }
   };
   window.xTimesI = function(number) {

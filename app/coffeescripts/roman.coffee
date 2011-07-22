@@ -16,7 +16,7 @@ window.toRoman = (number) ->
   else if number >= 14 && number <= 48
     "X" + toRoman(number - 10)
   else if number >= 49
-    toRoman(50 - number) + "L"
+    toRoman(50 - number) + "L" + toRoman(number - 50)
 
 window.xTimesI = (number) ->
   numeral = ""
