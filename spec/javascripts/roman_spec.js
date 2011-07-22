@@ -42,7 +42,10 @@
     it('should convert 14 to XIV', function() {
       return expect(toRoman(14)).toEqual("XIV");
     });
-    return it('should convert 15 to XV', function() {
+    it('should convert 15 to XV', function() {
+      return expect(toRoman(15)).toEqual("XV");
+    });
+    return it('should convert 16 to XVI', function() {
       return expect(toRoman(15)).toEqual("XV");
     });
   });

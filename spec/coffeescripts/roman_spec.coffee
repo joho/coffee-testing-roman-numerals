@@ -43,3 +43,6 @@ describe 'toRoman()', ->
 
   it 'should convert 15 to XV', ->
     expect(toRoman(15)).toEqual("XV")
+
+  it 'should convert 16 to XVI', ->
+    expect(toRoman(15)).toEqual("XV")
