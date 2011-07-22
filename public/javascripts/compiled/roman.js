@@ -8,8 +8,10 @@
       }
     } else if (number < 5) {
       numeral = "IV";
-    } else if (number >= 5) {
+    } else if (number >= 5 && number <= 8) {
       numeral = "V" + toRoman(number - 5);
+    } else {
+      numeral = "IX";
     }
     return numeral;
   };

@@ -21,8 +21,11 @@
     it('should convert 7 to VII', function() {
       return expect(toRoman(7)).toEqual("VII");
     });
-    return it('should convert 8 to VIII', function() {
+    it('should convert 8 to VIII', function() {
       return expect(toRoman(8)).toEqual("VIII");
+    });
+    return it('should convert 9 to IX', function() {
+      return expect(toRoman(9)).toEqual("IX");
     });
   });
 }).call(this);
