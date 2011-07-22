@@ -2,18 +2,17 @@
 # Do roman numerals
 #
 window.toRoman = (number) ->
-  numeral = ""
-  
   if number <= 0
     # do nothing (coffeescript ranges are dumb)
+    ""
   else if number < 4
+    numeral = ""
     for i in [1..number]
       numeral += "I"
+    numeral
   else if number < 5
-    numeral = "IV"
+    "IV"
   else if number >= 5 && number <= 8
-    numeral = "V" + toRoman(number - 5)
+    "V" + toRoman(number - 5)
   else
-    numeral = "IX"
-
-  numeral
+    "IX"
